@@ -1,0 +1,67 @@
+body {
+  background-color: hsl(228, 45%, 44%);
+  font-family: "Roboto";
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 64px;
+}
+.main {
+  /* Set the dimensions and styles of your centered div */
+  width: 400px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px;
+
+  column-gap: 40px;
+  /* Center the div using positioning and transforms */
+  /*position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+}
+.message {
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: hsl(228, 51%, 23%);
+}
+p {
+  font-size: 18px;
+}
+@media screen and (max-width: 414px) {
+  body {
+    width: 375px;
+    background-color: white;
+  }
+  h1 {
+    font-size: 40px;
+    color: hsl(228, 51%, 23%);
+  }
+  p {
+    font-size: 15px;
+    margin-bottom: 200px;
+    color: hsl(228, 51%, 23%);
+  }
+  .message {
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    background-color: hsl(228, 51%, 23%);
+  }
+  .message:active {
+    background-color: hsl(4, 100%, 67%);
+  }
+}
